@@ -18,53 +18,73 @@ public class Main {
         System.out.println("Задание 1");
         int[] arr1 = new int[3];
         double[] arr2 = {1.57, 7.654, 9.986};
-        int[] arr3 = {10, 15, 33, 45};
+        char[] arr3 = {'a', 'b', 'c', 'd' };
+    }
 
-    } // не понятно как   , последнюю убрать?
 
     public static void task2() {
         System.out.println("Задание 2");
         int[] arr1 = {1, 2, 3};
-        for (int i = 0; i < arr1.length; i++) {
-
-            System.out.print(arr1[i] + ", ");
-        }
-        System.out.println();
-
         double[] arr2 = {1.57, 7.654, 9.986};
-        for (int a = 0; a < arr2.length; a++) {
-            System.out.print(arr2[a] + ", ");
+        char[] arr3 = {'a', 'b', 'c', 'd' };
+
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.print(arr1[i]);
+            if (i != arr1.length - 1) {
+                System.out.print(", ");
+            }
+
         }
         System.out.println();
 
-        int[] arr3 = {10, 15, 33, 45};
-        for (int b = 0; b < arr3.length; b++) {
 
-            System.out.print(arr3[b] + ", ");
+        for (int i = 0; i < arr2.length; i++) {
+            System.out.print(arr2[i]);
+            if (i != arr2.length - 1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
 
-        System.out.println("Hello");
+        for (int i = 0; i < arr3.length; i++) {
+            System.out.print(arr3[i]);
+            if (i != arr3.length - 1) {
+                System.out.print(", ");
+            }
+
+        }
+        System.out.println();
     }
 
     public static void task3() {
         System.out.println("Задание 3");
         int[] arr1 = {1, 2, 3};
+        double[] arr2 = {1.57, 7.654, 9.986};
+        char[] arr3 = {'a', 'b', 'c', 'd' };
 
         for (int i = arr1.length - 1; i >= 0; i--) {
-            System.out.print(arr1[i] + ",");
+            System.out.print(arr1[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
 
-        double[] arr2 = {1.57, 7.654, 9.986};
+
         for (int i = arr2.length - 1; i >= 0; i--) {
-            System.out.print(arr2[i] + ", ");
+            System.out.print(arr2[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
 
-        int[] arr3 = {10, 15, 33, 45};
+
         for (int i = arr3.length - 1; i >= 0; i--) {
-            System.out.print(arr3[i] + ", ");
+            System.out.print(arr3[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
     }
@@ -73,14 +93,32 @@ public class Main {
         System.out.println("Задание 4");
         int[] arr4 = {1, 2, 3, 4, 5, 6, 7, 8};
         for (int i = 0; i < arr4.length; i++) {
-            if (i % 2 != 0) {
-
-                System.out.printf(arr4[i] + ", "); // не понятно как  ,  последнюю убрать?
+            if (arr4[i] % 2 != 0) {
+                arr4[i] += 1;
             }
         }
+        System.out.println(Arrays.toString(arr4));
     }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //int[] weights = {90, 91, 93, 92, 85, 87, 88, 89, 0, 0, 0, 0};
